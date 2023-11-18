@@ -1,0 +1,146 @@
+.nav {
+  display: grid;
+  position: sticky;
+  top: 0;
+}
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  background-color: #0a2640;
+  padding: 0.5rem 2rem;
+  /* drop down css start*/
+  /*hamburger menu start*/
+  /*hamburger menu start*/
+}
+.nav ul li a {
+  font-family: "open sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  text-decoration: none;
+  transition: 0.5s ease-in;
+  color: white;
+}
+.nav ul li a:hover {
+  background-color: #f1f1f1;
+  color: #000000;
+  box-shadow: 2px 4px 8px gray;
+}
+.nav ul li .subscribe-btn {
+  color: #0a2640;
+  font-family: "open sans";
+  font-weight: 700;
+  font-size: 16px;
+  transition: 0.5s ease-in;
+  line-height: 24px;
+  align-items: center;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 24px;
+  padding: 8px 40px;
+}
+.nav ul li .subscribe-btn:hover {
+  background-color: silver;
+  box-shadow: 2px 4px 8px gray;
+}
+.nav ul .logo {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.nav ul .logo .logo-icon {
+  width: 50px;
+  height: 65px;
+}
+.nav ul .logo h1 {
+  color: #ffffff;
+  font-family: "manrope";
+  font-weight: 700;
+  font-size: 44;
+}
+.nav ul .search {
+  max-width: max-content;
+  height: 3vh;
+  outline: none;
+  border: none;
+  border-color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+.nav ul .dropdown {
+  display: inline-block;
+  position: relative;
+}
+.nav ul button {
+  border: none;
+  background-color: #0a2640;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.nav ul .dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+.nav ul .dropdown:hover .dropdown-options {
+  display: block;
+}
+.nav ul .dropdown-options a {
+  width: max-content;
+  display: block;
+  color: #0a2640;
+  padding: 5px;
+  text-decoration: none;
+  padding: 20px 40px;
+}
+.nav ul .dropdown-options a:hover {
+  color: #0a0a23;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+.nav ul .more {
+  display: none;
+}
+@media (min-width: 280px) {
+  .nav ul .group {
+    display: none;
+  }
+  .nav ul .more {
+    display: flex;
+    cursor: pointer;
+  }
+}
+@media (min-width: 750px) {
+  .nav ul .group {
+    display: none;
+  }
+  .nav ul .more {
+    display: flex;
+    cursor: pointer;
+  }
+}
+@media (min-width: 1000px) {
+  .nav ul .group {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .nav ul .more {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
